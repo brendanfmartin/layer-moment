@@ -7,7 +7,7 @@ exports.hello = (event, context, callback) => {
     statusCode: 200,
     body: JSON.stringify(
       {
-        message: `It's currently ${moment().format('llll')}`
+        message: `It's currently ${moment().format('llll')}!`
       },
       null,
       2
