@@ -5,7 +5,7 @@ exports.hello = (event, context, callback) => {
     statusCode: 200,
     body: JSON.stringify(
       {
-        message: `It's currently ${Date()}`
+        message: `It's currently ${Date()}!`
       },
       null,
       2
