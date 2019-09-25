@@ -8,11 +8,6 @@ provider:
   deploymentBucket:
     name: cf-templates-5rrcz2248gen-${self:provider.region}
 
-layers:
-  Moment:
-    path: layers
-    description: "moment dependencies"
-
 functions:
   hello:
     handler: handler.hello
@@ -21,7 +16,3 @@ functions:
           path: /hello
           method: any
           private: false
-    environment:
-      NODE_PATH: "./:/opt/node_modules"
-    layers:
-      - {Ref: MomentLambdaLayer}
